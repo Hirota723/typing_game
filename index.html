@@ -1,0 +1,28 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScriptで簡単なタイピングゲームを作ってみよう</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game" class="text-container">
+      <label for="inputText">
+        <div class="question">
+          <span id="entered" class="marker"></span>
+          <span id="remained">document</span>
+        </div>
+        <input type="text" class="text" id="inputText" autofocus="" />
+      </label>
+    </div>
+
+    <div id="message" class="text-container hidden">
+      <div class="message">
+        ゲームクリア！お疲れ様でした！<br />
+        <button id="replayBtn" class="button">もう一度プレイする</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
